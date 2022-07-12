@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans&family=Plus+Jakarta+Sans&family=Poppins:wght@400;500;700&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: grid;
+    justify-content: end;
+    align-content: flex-end;
+    min-height: 100vh;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5rem 100px;
+    background: #005f73;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 20px;
+}
+
+footer .container h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container h2::before {
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #ca6702;
+}
+
+footer .container p {
+    color: #fff;
+}
+
+.social {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 10px;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: #005f73;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.social li a:hover {
+    background: #0a9396;
+}
+
+.social li a .fa {
+    color: #fff;
+    font-size: 20px;
+}
+
+.links {
+    position: relative;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.links li a:hover {
+    color: #e9d8a6;
+}
+
+.info {
+    position: relative;
+}
+
+.info li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+.info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+}
+
+.info li span {
+    color: #fff;
+}
+
+.info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: #e9d8a6;
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
