@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 90vh;
+    margin: auto;
+}
+
+main::before { 
+    content: url(unsplash1.jpg);
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+.title {
+    padding: 0.8rem;
+}
+
+h1,
+h3 {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+h1::before {
+    content: "Hello";
+}
+
+.blockquote::before {
+    content: open-quote;
+    color: rgb(232, 15, 62);
+}
+
+.blockquote::after {
+    content: close-quote;
+    color: rgb(232, 15, 62);
+}
+
+section {
+    padding: 1rem;
+}
+
+a[data-tool-tip] {
+    position: relative;
+}
+
+a[data-tool-tip]::after {
+    content: attr(data-tool-tip);
+    background: #DAF7A6;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+}
+
+.section { 
+    counter-reset: counter-name;
+    position: relative;
+}
+
+h3::before { 
+    counter-increment: counter-name;
+    content: counter(counter-name);
+    position: absolute;
+    left: -1.5rem;
+    background: rgb(185, 109, 109);
+    padding: 0.4rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    
+}
+
