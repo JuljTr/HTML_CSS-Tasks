@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../concert-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+
+main .left_box {
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+}
+
+main .left_box .content {
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    padding: 40px;
+    transition: .5s;
+}
+
+.left_box .content:hover {
+    background: #e91e63;
+}
+
+.left_box .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.left_box .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.events {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.events ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px;
+    margin: 0;
+}
+
+.events ul li {
+    list-style: none;
+    background: #fff;
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.events ul li .time {
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+    background-color: #262626;
+    transition: .5s;
+}
+
+.events ul li:hover .time {
+    background-color: #e91e63;
+}
+
+.events ul li .time h2 {
+    margin: 50% 20%;
+    color: #fff;
+    font-size: 3.1rem;
+    line-height: 30px;
+}
+
+.events ul li .time h2 span {
+    font-size: 1.5rem;
+}
+
+.events ul li .details {
+    padding: 20px;
+    background: #fff;
+}
+
+.events ul li .details h3 {
+    font-size: 22px;
+}
+
+.events ul li .details p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+.events ul li .details a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    border: 2px solid #262626;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: .5s;
+    position: relative;
+    left: 70%;
+}
+
+.events ul li .details a:hover { 
+    color: #fff;
+    background-color: #e91e63;
+    border-color: #e91e63;
+}
