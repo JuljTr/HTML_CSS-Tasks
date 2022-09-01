@@ -1,4 +1,6 @@
 # HTML_CSS-Tasks
+Created a series of mini-projects in which fundamental concepts of HTML and CSS are exercised. 
+The projects were constructed with Grid and flexbox to maintain responsiveness. 
 
 ## Table of Contents
 * [Resources Used](#resourcesused)
